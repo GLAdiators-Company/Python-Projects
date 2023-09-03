@@ -1,10 +1,10 @@
 import time
 class Library:
-    books = []
-    no_of_books = 0
     file_path = ''
     def __init__(self,file_name):
         self.file_path = file_name
+        self.no_of_books = 0
+        self.books = []
     def add_book(self,b_name,writer,user_name):
         if b_name in self.books:
             print('Book already exists')
@@ -38,8 +38,8 @@ class Library:
         else:
             print(f'Book name : \'{b_name}\' doesn\'t exists')
 
-central_library = Library('central.txt')
-diploma_library = Library('diploma.txt')
+central_library = Library('library_management_system\\central.txt')
+diploma_library = Library('library_management_system\\diploma.txt')
 
 print('Welcome to library management system'.center(50))
 library_choice = 1
