@@ -1,6 +1,5 @@
 import time
 class Library:
-    file_path = ''
     def __init__(self,file_name):
         self.file_path = file_name
         self.no_of_books = 0
